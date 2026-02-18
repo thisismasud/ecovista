@@ -70,7 +70,7 @@ The project follows a structured and modular architecture:
 
 Ensure you have the following installed:
 
-- **Node.js** (v16 or higher)
+- **Node.js** (v20 or higher)
 - **npm** (v8 or higher)
 
 ### Installation
@@ -78,7 +78,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ecovista.git
+   git clone https://github.com/thisismasud/ecovista.git
    cd ecovista
    ```
 
@@ -118,8 +118,8 @@ The following scripts are available in the `package.json`:
 The project uses a `.env` file to manage environment-specific configurations. Add the following variables:
 
 ```env
-NEXT_PUBLIC_WEATHER_API_KEY=your_api_key
-NEXT_PUBLIC_MAP_API_KEY=your_map_api_key
+WEATHER_API_KEY=your_api_key
+BIG_DATA_API_KEY=your_map_api_key
 ```
 
 ---
