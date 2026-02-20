@@ -9,9 +9,9 @@ export const getLocationData = async(lat: number, lon: number) =>{
     }
 }
 
-export const getLocationLatLongList = async(location: string) =>{
+export const getLocationLatLongList = async() =>{
     try{
-        const response = await fetch(`https://localhost:3000/api/location/${location}`)
+        const response = await fetch(`https://localhost:3000/api/location`)
         const data = await response.json()
         return data
 
@@ -19,3 +19,14 @@ export const getLocationLatLongList = async(location: string) =>{
         console.error("Error fetching location data:", error?.message)
     }
 }
+export const getLocationLatLong = async (locationName:string) => {
+    try {
+        const response = await fetch(
+            `http://localhost:3000/api/location/${locationName}`
+        );
+        const data = await response.json();
+        return data;
+    } catch (e) {
+        console.error(e.message);
+    }
+};
